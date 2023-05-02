@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+* {
+  font-family: 'Bruno Ace SC', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto 0;
+  height: 100vh;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+
+.calories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calorie-count {
+  font-size: 60px;
+}
+
+.km {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.input-form input {
+  width: 75%;
+  height: 24px;
+}
+
+.input-form button {
+  padding: 10px 32px;
+  background-color: #51cf66;
+  border: none;
+  color: #fff;
+}
+
+.input-form button:hover{
+  background-color: #37b24d;
+}
+
+.card-big {
+  height: 610px;
+  width: 400px;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.calorie-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.icon:hover {
+  color: #c92a2a;
+}
+
+.calorie-tag {
+  background-color: #51cf66;
+  padding: 5px 12px;
+  border-radius: 150px;
+  font-size: 12px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 0 10px;
+}
+
+.inputs input:focus {
+  outline: none;
+}
+
+.input-field {
+  border: none;
 }
